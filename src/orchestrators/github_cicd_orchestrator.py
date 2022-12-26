@@ -41,4 +41,4 @@ class GitHubCicdOrchestrator(CicdOrchestratorInterface):
         logging.info(f'Dispatch event: url {url}; data {data}')
         response = requests.post(url=url, headers=self.headers, json=data)
         # Throw appropriate exception if request failed
-        response.raise_for_status()
+        response.raise_for_status() 
